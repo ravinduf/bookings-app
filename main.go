@@ -22,7 +22,7 @@ func main() {
 	// var bookings [50]string
 	
 	// slice 
-	var bookings []string
+	bookings := []string{"test"}
 	
 	var firstName string
 	var lastName string
@@ -49,10 +49,10 @@ func main() {
 	// bookings[0] = firstName + " " + lastName
 	bookings = append(bookings, firstName + " " + lastName)
 
-	fmt.Printf("The whole array: %v\n", bookings)
-	fmt.Printf("The first value: %v\n", bookings[0])
-	fmt.Printf("Array type: %T\n", bookings)
-	fmt.Printf("Array length: %v\v", len(bookings))
+	fmt.Printf("The whole slice: %v\n", bookings)
+	fmt.Printf("The first value: %v\n", bookings[1])
+	fmt.Printf("slice type: %T\n", bookings)
+	fmt.Printf("slice length: %v\v", len(bookings))
 
 	fmt.Printf("Thank you %v %v for booking %v tickets. \nYou will recieve a confirmation email at %v\n", 
 		firstName, lastName, userTickets, email)
