@@ -19,8 +19,10 @@ func main() {
 	fmt.Println("Get your tickets here to attend")
 
 	// var bookings = [50]string{"Ravindu", "Senal"}
-	var bookings [50]string
+	// var bookings [50]string
 	
+	// slice 
+	var bookings []string
 	
 	var firstName string
 	var lastName string
@@ -44,8 +46,8 @@ func main() {
 	// userName = "Tom"
 	
 	remainingTickets = remainingTickets - userTickets
-	bookings[0] = firstName + " " + lastName
-
+	// bookings[0] = firstName + " " + lastName
+	bookings = append(bookings, firstName + " " + lastName)
 
 	fmt.Printf("The whole array: %v\n", bookings)
 	fmt.Printf("The first value: %v\n", bookings[0])
