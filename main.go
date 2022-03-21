@@ -11,15 +11,9 @@ func main() {
 	const conferenceTickets uint = 50
 	var remainingTickets uint = conferenceTickets
 
-	// fmt.Println("Welcome to", conferenceName, "booking appllication")
-	// fmt.Println("Get your tickets here to attend")
-	// fmt.Println("We have total of", conferenceTickets, "tickets and", remainingTickets, "are still available")
+	greetUsers(conferenceName, conferenceTickets, remainingTickets)
 
-	// fmt.Printf("conferenceTickets is %T, remainingTickets is %T, conferenceName %T\n", conferenceTickets, remainingTickets, conferenceName)
-
-	fmt.Printf("Welcome to %v booking application\n", conferenceName)
-	fmt.Printf("We have total of %v tickets and %v are still available.\n", conferenceTickets, remainingTickets)
-	fmt.Println("Get your tickets here to attend")
+	
 
 	// var bookings = [50]string{"Ravindu", "Senal"}
 	// var bookings [50]string
@@ -95,4 +89,10 @@ func main() {
 		}
 
 	}
+}
+
+func greetUsers(confName string, conferenceTickets uint, remainingTickets uint) {
+	fmt.Printf("Welcome to our conference %v booking application", confName)
+	fmt.Printf("We have total of %v tickets and %v are still available.\n", conferenceTickets, remainingTickets)
+	fmt.Println("Get your tickets here to attend")
 }
